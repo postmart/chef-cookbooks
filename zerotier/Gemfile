@@ -1,0 +1,15 @@
+source 'https://rubygems.org'
+
+gem 'berkshelf'
+gem 'pry'
+gem 'foodcritic'
+gem 'serverspec'
+gem 'test-kitchen'
+gem 'chefspec'
+gem 'kitchen-ssh'
+
+group :integration do
+  gem 'kitchen-docker'
+  gem 'kitchen-vagrant'
+end
+

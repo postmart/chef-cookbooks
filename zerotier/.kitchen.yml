@@ -1,0 +1,17 @@
+---
+driver:
+  name: docker
+
+provisioner:
+  name: chef_zero
+
+platforms:
+  - name: ubuntu-14.04
+    driver_config:
+      socket: <%= ENV['DOCKER_HOST'] || 'unix:///var/run/docker.sock' %>
+
+suites:
+  - name: default
+    run_list:
+      - recipe[zerotier::default]
+    attributes:
