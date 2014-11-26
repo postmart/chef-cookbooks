@@ -2,9 +2,6 @@
 # Cookbook Name:: zerotier
 # Recipe:: default
 #
-# Copyright 2014, Faria Systems Inc.
-#
-# All rights reserved - Do Not Redistribute
 #
 remote_file "#{Chef::Config[:file_cache_path]}/ZeroTierOneInstaller-linux-x64" do
   source "https://www.zerotier.com/dist/ZeroTierOneInstaller-linux-x64"
